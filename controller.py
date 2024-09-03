@@ -88,7 +88,7 @@ def client_handler(client_socket):
     port = dataq.get()
     print(f"[*] SSH Tunnel Port {port}")
 
-    cmd = f"ssh -o StrictHostKeyChecking=no localhost -p {port}"
+    cmd = f"ssh localhost -p {port}"
     print(cmd)
     os.system(cmd)
 

@@ -54,9 +54,22 @@ sequenceDiagram
 First, start the controller and create a SSH service
 ```
 > python3 controller.py
-[*] Bind Success for SSH Server using 0.0.0.0:52412
+[*] Bind Success for SSH Server using 0.0.0.0:53482
 [*] Listening
 ```
 
+Now we take the connection information (port 53482) for the terminal
 ```
+python3 terminal.py controller_adress 53482 localhost 22
+Connecting to ssh host controller_adress:53482 ...
+Now forwarding remote port to localhost:22 ...
+Connected!  Tunnel open ('127.0.0.1', 53486) -> ('x.x.x.x', 53482) -> ('localhost', 22)
+```
+
+On controller side, it spawn a SSH connection with the ssh tunnel port, which is redirected to the terminal.
+```
+[*] Incoming Connection from y.y.y.y:53588
+Start forwarder on port 53589
+[*] SSH Tunnel Port 53589
+ssh localhost -p 53589
 ```
