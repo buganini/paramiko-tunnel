@@ -74,3 +74,5 @@ Start forwarder on port 53589
 ssh localhost -p 53589
 Enter passphrase for key '/Users/user/.ssh/id_rsa':
 ```
+
+Between the paramiko server/client, a hard-coded `PSK_USERNAME` and `PSK_PASSWORD` pair is used to do the authentication.
