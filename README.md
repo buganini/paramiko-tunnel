@@ -72,4 +72,5 @@ On controller side, it spawn a SSH connection with the ssh tunnel port, which is
 Start forwarder on port 53589
 [*] SSH Tunnel Port 53589
 ssh localhost -p 53589
+Enter passphrase for key '/Users/user/.ssh/id_rsa':
 ```
