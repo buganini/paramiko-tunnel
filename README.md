@@ -2,7 +2,7 @@
 
 This article demonstrates how to use `Paramiko` as both an SSH client and server, enabling secure communication between systems without requiring host machines to provide or expose native SSH services. This approach offers flexibility and control over SSH functionality in various environments, such as IoT device management.
 
-[Paramiko](https://www.paramiko.org/) is a pure-Python 1 (3.6+) implementation of the SSHv2 protocol 2, providing both client and server functionality.
+[Paramiko](https://www.paramiko.org/) is a pure-Python (3.6+) implementation of the SSHv2 protocol 2, providing both client and server functionality.
 
 ## SSH Tunnel
 
