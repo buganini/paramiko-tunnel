@@ -14,7 +14,7 @@ sequenceDiagram
     participant SSH Server
     participant Friend Of Server
     SSH Client->>SSH Server: Connect
-    Note over SSH Client,SSH Server: SSH Connection Establish
+    Note over SSH Client,SSH Server: SSH Connection Established
     Note over SSH Client: Bind Local Port
     SSH Client->>Friend Of Server: Tunneled Traffic
 ```
@@ -27,7 +27,7 @@ sequenceDiagram
     participant SSH Server
     participant Friend Of Server
     SSH Client->>SSH Server: Connect
-    Note over SSH Client,SSH Server: SSH Connection Establish
+    Note over SSH Client,SSH Server: SSH Connection Established
     Note over SSH Server: Bind Remote Port
     SSH Server->>Friend Of Client: Tunneled Traffic
 ```
@@ -47,6 +47,7 @@ sequenceDiagram
     Controller (SSH Server)->>OOB: Service Information and Connect Request
     OOB->>Terminal (SSH Client): Service Information and Connect Request
     Terminal (SSH Client)->>Controller (SSH Server): Connect
+    Note over Terminal (SSH Client),Controller (SSH Server): SSH Connection Established
     Note over Controller (SSH Server): Bind Remote Port
     Controller (SSH Server)->>Terminal (SSH Client): Tunneled Traffic to Terminal's Host SSH
 ```
