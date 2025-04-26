@@ -77,3 +77,7 @@ Enter passphrase for key '/Users/user/.ssh/id_rsa':
 ```
 
 Between the paramiko server/client, a hard-coded `PSK_USERNAME` and `PSK_PASSWORD` pair is used to do the authentication.
+
+# References
+* https://ismailakkila.medium.com/black-hat-python-reverse-shells-using-ssh-and-paramiko-8489acfc8fbf
+* https://github.com/paramiko/paramiko/blob/main/demos/rforward.py
